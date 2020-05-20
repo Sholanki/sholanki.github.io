@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body>
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item" onclick="myFunctionHome()">Home</a>
+  <a href="#aboutme" class="w3-button w3-bar-item" onclick="myFunctionAbout()">About Me</a>
+  <a href="#contact" class="w3-button w3-bar-item" onclick="myFunctionContact()">Contact</a>
+</nav>
+<section id="home">
+<section class="w3-container w3-center" style="max-width:600px; #aboutme { display: none;};
+#contact { display: none;}">
+  <h2 class="w3-wide">Home</h2>
+  <p class="w3-opacity"><i>This is the Home page</i></p>
+</section>
+<section class="w3-container w3-content w3-center" style="max-width:600px; #aboutme { display: none;};
+#contact { display: none;} ">
+<p class="w3-justify">
+Hi! I am Sholanki Biswas trying to create a sample website</p>
+</section>
+</section>
+<section id="aboutme">
+<section class="w3-container w3-center" style="max-width:600px; #home { display: none;};
+#contact { display: none;}">
+  <h2 class="w3-wide">About Me</h2>
+  <p class="w3-opacity"><i>This is about me, Sholanki Biswas</i></p>
+</section>
+<section class="w3-container w3-content w3-center" style="max-width:600px; #home { display: none;};
+#contact { display: none;}">
+<p class="w3-justify">
+Hi! I am Sholanki Biswas, a software programmer new to website development and trying her hands out on something new. I am curious, I love to try new things and I try to learn</p>
+</section>
+</section>
+<section id="contact">
+<section class="w3-container w3-center" style="max-width:600px; #home { display: none;};
+#aboutme { display: none;}">
+  <h2 class="w3-wide">Contact</h2>
+  <p class="w3-opacity"><i>This is the Contact page</i></p>
+</section>
+<section class="w3-container w3-content w3-center" style="max-width:600px; #home { display: none;};
+#aboutme { display: none;}">
+<p class="w3-justify">
+Hi! I am Sholanki Biswas and you can contact me on Github</p>
+</section>
+<form class="w3-container w3-content" style="max-width:600px;" action = "action_page.html">
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname"></input><br>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname"></input><br>
+<label for="desc">Optional Description:</label><br>
+<textarea id="desc" rows="4" cols="50"></textarea><br>
+<input type="submit" value="Submit">
+</form>
+</section>
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</body>
+<script>
+function myFunctionHome() {
+  var x = document.getElementById("aboutme");
+  var y = document.getElementById("contact");
+  var z = document.getElementById("home");
+  x.style.display = "none";
+  y.style.display = "none"; 
+  z.style.display = "block";  
+}
+function myFunctionAbout() {
+  var x = document.getElementById("home");
+  var y = document.getElementById("contact");
+  var z = document.getElementById("aboutme");
+  x.style.display = "none";
+  y.style.display = "none";  
+  z.style.display = "block"; 
+}
+function myFunctionContact() {
+  var x = document.getElementById("aboutme");
+  var y = document.getElementById("home");
+  var z = document.getElementById("contact");
+  x.style.display = "none";
+  y.style.display = "none"; 
+  z.style.display = "block";
+}
+</script>
+</html>
