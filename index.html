@@ -4,6 +4,37 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <head>
 <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formdiv {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -170,15 +201,17 @@ Hi! I am Sholanki Biswas, a software programmer new to website development and t
 <p class="w3-justify">
 Hi! I am Sholanki Biswas and you can contact me on Github</p>
 </section>
-<form class="w3-container w3-content" style="max-width:600px;" action = "action_page.html">
+<div class="formdiv">
+<form class="w3-container w3-content"  id="users" style="max-width:600px;" action = "action_page.html" method='get' target="_blank">
 <label for="fname">First Name:</label><br>
-<input type="text" id="fname"></input><br>
+<input type="text" id="fname" placeholder="Your first name..."></input><br>
 <label for="lname">Last Name:</label><br>
-<input type="text" id="lname"></input><br>
+<input type="text" id="lname" placeholder="Your last name..."></input><br>
 <label for="desc">Optional Description:</label><br>
-<textarea id="desc" rows="4" cols="50"></textarea><br>
+<textarea id="desc" rows="4" cols="50" placeholder="Description..."></textarea><br>
 <input type="submit" value="Submit">
 </form>
+</div>
 </section>
 <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
   <a href="#"><i class="fa fa-facebook-official"></i></a>
