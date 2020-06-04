@@ -14,3 +14,5 @@
 #### 4. After the entire slideshow container, previous and next buttons are included which contain functions on what to do which is encompassed in a div section inside the slideshow container
 #### 5. Functionaliy of dot below images are also provided
 #### 6. Styling done on same page using style tag within head tags
+### Added css style pages
+### Imported style sheets and made it look professional
